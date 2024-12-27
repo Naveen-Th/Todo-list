@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background: url('mockup.jpeg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.iphone {
+    border: 6px solid #525252;
+    border-radius: 65px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main {
+    background: rgb(0, 0, 0)/* #eef0f3 */;
+    height: 640px;
+    width: 302px;
+    padding: 20px 20px;
+    border: 5px solid black;
+    border-radius: 58px;
+}
+
+
+/* top elemenst */
+.topele {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.topnotch {
+    width: 100px;
+    height: 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    border-radius: 90px;
+    position: relative;
+    box-shadow: 0px 6px 5000px -48px rgba(0, 0, 0, 0.735);
+}
+
+.topnotch .camera {
+    background: #332a68;
+    color: white;
+    box-shadow: 0 0 1px grey;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 80px;
+    border-radius: 50px;
+}
+
+.camera .lens {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.256);
+    border-radius: 50px;
+    top: 2.5px;
+    left: 2.5px;
+}
+
+.topnotch .microphone {
+    position: absolute;
+    top: 9.3px;
+    left: 30px;
+    background: rgba(116, 116, 116, 0.755);
+    width: 40px;
+    height: 5px;
+    border-radius: 30px;
+}
+
+.topele .absolute {
+    position: absolute;
+    left: 243px;
+}
+
+.absolute i {
+    font-size: 16px;
+}
+
+.absolute .battery img {
+    position: absolute;
+    top: 4px;
+}
+
+.content {
+    margin-top: 5%;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .img {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+.content .img img {
+    width: 600px;
+    animation: all 1s ease-in-out ;
+}
+@keyframes all {
+    0% { 
+        transform: scale(0%); 
+    }
+    100% { 
+        transform: scale(100%);
+    }
+}
+.content h2 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(234, 234, 234);
+    text-shadow: 2px 1px 4px  rgb(0, 0, 0);
+    letter-spacing: 1px;
+    animation: all .6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.content .btn {
+    padding:0px;
+    margin-top: 14%;
+    text-align: center;
+    animation: all 1.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btn button {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(-130deg,rgb(245, 63, 83),rgb(233, 94, 110)) ;
+    box-shadow: 2px 4px 20px  rgb(245, 63, 83);
+    transition: all 0.4s;
+}
+.btn button:hover {
+    transition: all 0.3s ease-in;
+    background: white;
+    color: rgb(245, 63, 83);
+}
+
+.bottom-notch {
+    margin-top: 30px;
+    width: 120px;
+    height: 4px;
+    background: rgb(189, 189, 189);
+    border-radius: 50px;
+    cursor: pointer;
+}

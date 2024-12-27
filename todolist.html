@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="todo.css">
+
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js
+    "></script>
+</head>
+<body>
+    <div class="iphone">
+        <div class="main">
+    
+            <div class="topele">
+                <center>
+                    <div class="topnotch">
+                        <div class="camera">
+                            <div class="lens"></div>
+                        </div>
+                        <div class="microphone"></div>
+                    </div>
+                </center>
+    
+                <div class="absolute">
+                    <i class='bx bx-signal-4'><span
+                            style="font-size: 14px;margin-right: 5px;line-height: 30px;">LTE</span></i>
+                    <span class="battery">
+                        <img src="img.png" alt="" width="20">
+                    </span>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="img">
+                    <img src="todo.png" alt="">
+                </div>
+                <h2 id="text-animate"></h2>
+                <div class="btn">
+                    <a href="maintodo.html" id="button"> <button>Get Started</button> </a>
+                </div>
+            </div> 
+
+            <center >
+                <div class="bottom-notch"></div>
+            </center>
+        </div>
+    </div>
+    </div>
+<script>
+        new TypeIt("#text-animate", {
+            strings: ["Manage Your", "Everyday task list"],
+                speed: 50,
+                afterComplete: function (instance) {
+                    instance.destroy();
+                }
+            }).go();
+
+    
+</script>
+</body>
+</html>

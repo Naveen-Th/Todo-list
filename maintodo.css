@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background: url('mockup.jpeg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iphone {
+    border: 6px solid #525252;
+    border-radius: 65px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main {
+    background: rgb(0, 0, 0);
+    height: 680px;
+    width: 302px;
+    padding: 0px 20px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 58px;
+    position: relative;
+    overflow: hidden;
+}
+.main::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+/* top elemenst */
+.topele {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.topnotch {
+    width: 100px;
+    height: 25px;
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    border-radius: 90px;
+    position:relative;
+    box-shadow: 0px 6px 5000px -48px rgba(0, 0, 0, 0.735);
+}
+
+.topnotch .camera {
+    background: #332a68;
+    color: white;
+    box-shadow: 0 0 1px grey;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 80px;
+    border-radius: 50px;
+}
+
+.camera .lens {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.256);
+    border-radius: 50px;
+    top: 2.5px;
+    left: 2.5px;
+}
+
+.topnotch .microphone {
+    position: absolute;
+    top: 9.3px;
+    left: 30px;
+    background: rgba(116, 116, 116, 0.755);
+    width: 40px;
+    height: 5px;
+    border-radius: 30px;
+}
+
+.topele .absolute {
+    position: absolute;
+    left: 243px;
+}
+
+.absolute i {
+    font-size: 16px;
+}
+
+.absolute .battery img {
+    position: absolute;
+    top: 4px;
+}
+
+
+.bottom-notch {
+    width: 120px;
+    height: 4px;
+    background: rgb(189, 189, 189);
+    border-radius: 50px;
+    cursor: pointer;
+    position: fixed;
+    top: 88%;
+    left: 46.2%;
+}
+
+.addtask {
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    background: rgb(52, 52, 52);
+    border: none;
+    height: 40px;
+    padding: 5px;
+    border-radius: 35px;
+}
+.addtask input {
+    padding: 20px;
+    width: 90%;
+    background: rgba(27, 27, 27, 0.993);
+    border: none;
+    outline: none;
+    border-radius: 55px;
+    font-size: 15px;
+    color: rgb(156, 90, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+input::placeholder {
+    font-size: 15px;
+    color: rgb(156, 90, 255);
+    color: white;
+}
+.addtask button {
+    padding: 0px;
+    font-size: 22px;
+    color: rgb(156, 90, 255);
+    color: white;
+    background: rgb(25, 25, 25);
+    width: 55px;
+    height: 40px;
+    border-radius: 50%;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+h3 {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    word-spacing: 4px;
+    font-size: 24px;
+    font-weight: 800;
+}
+ h3 img {
+    width: 30px;
+    height: 30px;
+}
+ul {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:1fr ;
+    gap:10px;
+    border-radius: 20px;
+    background: rgb(41, 41, 41);
+    padding: 5px 9px 10px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    color: rgb(236, 232, 246);
+    list-style:none;
+    background: rgba(27, 27, 27, 0.993);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+} 
+
+li i {
+    margin: 0px 2px;
+    color: whitesmoke;
+    text-align:center;
+    padding: 5px;
+    font-size: 16px;
+    background:rgb(63, 63, 63);
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+
